@@ -28,4 +28,6 @@ body {
 
     video{
       margin-left:8px;
-    
+
+      .caption {
+	color:#94979c;
