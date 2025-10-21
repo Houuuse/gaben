@@ -1,51 +1,31 @@
-/* style.css */
-
-canvas {
-    border: 2px solid black;
-    cursor: crosshair;
+body {
+  font-family: 'Oswald', sans-serif;
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px
 
 }
+     h1{
+      text-align:center;
+       
+    }
 
-.paint-tools {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    max-width: 500px;
-    align-items: center;
-}
+    h2 {
+    margin-left:8px;
+    }
 
-#brush-size {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    iframe{
+    margin-left:8px;
+    }
 
-#pen {
-    padding: 10px;
-    background-color: #0800ff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    .menu{
+    text-align:center;
+    }
 
-#eraser {
-    padding: 10px;
-    background-color: #ee00cf;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    p{
+      margin-left:8px;
+    }
 
-#color-picker {
-    cursor: pointer;
-}
-
-#clear-canvas {
-    padding: 10px;
-    background-color: #ff3333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    video{
+      margin-left:8px;
+    
