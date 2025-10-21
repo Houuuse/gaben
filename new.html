@@ -29,15 +29,25 @@ body {
 		<p>==================================================</p>
 		<h3>Post 3: My pencil case</h3>
 		<p class="caption"><i>21st October 2025, 6:07PM</i></p>
-		<img id="pencilcase" width=256 height=256 src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQBY-qcocj6JTIFJUyEc408DLNIqbe2VvQ8vBWIMdLnelNnLF3QDuFN5_8Ato2l3NBdjCwF46Xzkaj5d4n9rBbbOsd0-JEIEv449qqKEvCtq74GQhadMaEYUJ00"></img>
-		<p class="caption"><small><a id="toggle" href="#">hide/show</a></small></p>
-			<script>
-				document.getElementById("toggle").addEventListener("click", function() {
-					const pencilcase = document.getElementById("pencilcase");
-					pencilcase.style.display = (pencilcase.style.display === "none") ? "block" : "none" ;
-				});
-			<script>
-			</script>
+		<small><a id="toggleLink" href="#">Hide photo</a></small><br>
+<img id="photo" 
+     src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQBY-qcocj6JTIFJUyEc408DLNIqbe2VvQ8vBWIMdLnelNnLF3QDuFN5_8Ato2l3NBdjCwF46Xzkaj5d4n9rBbbOsd0-JEIEv449qqKEvCtq74GQhadMaEYUJ00" 
+     alt="Photo" width="256" height="256">
+
+<script>
+document.getElementById('toggleLink').addEventListener('click', function(e) {
+  e.preventDefault();
+  const img = document.getElementById('photo');
+  if (img.style.display === 'none') {
+    img.style.display = 'block';
+    this.textContent = 'hide photo';
+  } else {
+    img.style.display = 'none';
+    this.textContent = 'show photo';
+  }
+});
+</script>
+
 		<p>Righteo so my pencil case <br> So im in a class called 9w and a few of my classmate try to steal my pencil case pictured above. <br> So one thing that i gotta do is look after it so they cant take it. <br>One time they hid it 3 rooftiles from the northwest corner in g27<br> so i went there to retrieve it and my pants fell down while i was climbing into the roof and all the girls laughed at me<br> then when i got into the roof there was no pencil case and i found out that they tricked me<br>then one time in english class i was late but i left my pencil case in the class and one of the deliquents threw it out of a second story window <br> thats about it pretty much<br>cheers<br>tom harrison 9w pegs</p>
 	</body>
 </htmL>
