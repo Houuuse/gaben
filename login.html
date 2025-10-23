@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head><title>LOGIN</title>
-    <meta name="google-adsense-account" content="ca-pub-6140954541275568"></head>
-    <body><centre><h1>Login</h1></centre>
-    <form action="/login.php">
-  <label for="fname">Username:</label><br>
-  <input type="text" id="user" name="fname"><br>
-  <label for="lname">Password:</label><br>
-  <input type="text" id="pw" name="lname"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login • NOT Tom Harrison</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-page">
+      <a class="login-back-link" href="/index.html">&larr; Back to home</a>
+      <section class="login-card" aria-labelledby="login-title">
+        <h1 id="login-title">Sign in</h1>
+        <p class="login-subtitle">
+          Log in to access the secret bits of NOT Tom Harrison's website.
+        </p>
+        <form class="login-form" action="/login.php" method="post">
+          <label class="login-label" for="user">Username</label>
+          <input
+            class="login-input"
+            type="text"
+            id="user"
+            name="username"
+            autocomplete="username"
+            required
+          />
 
-    
-    
-    
-    </body>
+          <label class="login-label" for="pw">Password</label>
+          <input
+            class="login-input"
+            type="password"
+            id="pw"
+            name="password"
+            autocomplete="current-password"
+            required
+          />
 
+          <div class="login-actions">
+            <label class="remember-me">
+              <input type="checkbox" name="remember" />
+              <span>Remember me</span>
+            </label>
+            <a class="login-link" href="#">Forgot password?</a>
+          </div>
+
+          <button class="login-submit" type="submit">Log in</button>
+        </form>
+        <p class="login-footer">
+          Don't have an account? <a class="login-link" href="#">Request access</a>.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
-
-
